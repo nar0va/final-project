@@ -1,0 +1,94 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-color: transparent;
+}
+
+
+
+.aligncenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    width: 100%;
+    min-height: 79.5;
+    padding: 20px 0;
+    background-color: transparent;
+}
+
+.navbar img {
+    max-width: 70px;
+}
+
+.navbar .logo{
+float: left;
+}
+
+.menu{
+    float: left;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    float: left;
+  }
+  
+
+
+  .menu ul li {
+    padding: 0 10px;
+    font-size: 12px;
+    color: #999999;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    text-decoration: none;
+    list-style-type: none;
+    cursor: pointer;
+  }
+
+.menu ul li a{
+    color: #000000;
+    text-decoration: none;  
+    font-family: "Poppins";
+    font-weight: 600; 
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    word-wrap: break-word;
+}
+
+.leftpart{
+    width: 33%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.rightpart{
+    width: 67%;
+    height: 100%;
+    float: left;
+    padding-left: 33%;}
+
+
+.background .rightpart .img{
+    background-image: url("../img/backimg.jpeg");
+    position: absolute;
+    top: -20px;
+    bottom: -20px;
+    left: -20px;
+    right: -20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
