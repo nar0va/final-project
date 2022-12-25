@@ -1097,3 +1097,9 @@ td {
 	height: 17px;
 }
 
+/* MEDIA */
+@media (max-width: 1040px) {
+	.container {
+		padding: 0px 20px;
+	}
+}
