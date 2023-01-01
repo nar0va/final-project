@@ -33,20 +33,20 @@
 // person2();
 
 
-function waxon_tm_modalbox_about(){
+// function waxon_tm_modalbox_about(){
 
-    var modalBox	= jQuery('.waxon_tm_modalbox_about');
-    var opener		= jQuery('.about .btnn a');
-    var closer		= modalBox.find('.close');
+//     var modalBox	= jQuery('.waxon_tm_modalbox_about');
+//     var opener		= jQuery('.about .btnn a');
+//     var closer		= modalBox.find('.close');
 
-    opener.on('click',function(){
-        modalBox.addClass('opened');
-        return false;
-    });
-    closer.on('click',function(){
-        modalBox.removeClass('opened');
-        return false;
-    });
-}
-waxon_tm_modalbox_about();
+//     opener.on('click',function(){
+//         modalBox.addClass('opened');
+//         return false;
+//     });
+//     closer.on('click',function(){
+//         modalBox.removeClass('opened');
+//         return false;
+//     });
+// }
+// waxon_tm_modalbox_about();
 
