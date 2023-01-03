@@ -2,777 +2,1173 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Waxon|Home</title>
-    <!-- FONT AWESOME ICONS -->
-    <script src="https://kit.fontawesome.com/e9ae48f4db.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Waxon|Home</title>
+  <!-- FONT AWESOME ICONS -->
+  <script src="https://kit.fontawesome.com/e9ae48f4db.js" crossorigin="anonymous"></script>
 
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,300;0,400;0,500;0,700;1,700&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,500&family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,300;0,400;0,500;0,700;1,700&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,500&family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet" />
 
-    <!-- BOOTSRTAP 5 CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- BOOTSRTAP 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- SWIPER -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <!-- SWIPER -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
-    <!-- JQUERY -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <!-- JS -->
-    <script src="js/index.js"></script>
-    <!-- MAIN CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
+  <!-- Cursor -->
+  <div class="pointer"></div>
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).mousemove(function (e) {
+      $(".pointer").css({ left: e.pageX, top: e.pageY });
+    });
+  </script>
 
-    <!-- Cursor -->
-    <div class="pointer"></div>
-    <script src="https://code.jquery.com/jquery-3.6.3.js"
-        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        $(document).mousemove(function (e) {
-            $('.pointer').css({ left: e.pageX, top: e.pageY })
-        })
-    </script>
+  <!--Navigation -->
+  <!-- <nav class="navbar navbar-expand-lg sticky-top px-3 pt-3 pb-3">
+      <div class="container">
+        <a class="logo" href="#">
+          <img
+            src="https://marketifythemes.net/html/waxon/img/logo/dark.png"
+            alt="Logo"
+            width="70px"
+            height="35px"
+        /></a>
+        <button
+          class="navbar-toggler navbutton"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="true"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars fa-2x"></i>
+        </button>
 
-    <!--Navigation -->
-    <nav class="navbar navbar-expand-lg sticky-top  px-3 pt-3 pb-3">
-        <div class="container">
-            <a class="logo" href="#">
-                <img src="https://marketifythemes.net/html/waxon/img/logo/dark.png" alt="Logo" width="70px"
-                    height="35px" /></a>
-            <button class="navbar-toggler navbutton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars fa-2x"></i>
-            </button>
-
-            <div class="menu">
-                <div class="links collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="nav nav-pills alcenter myul">
-                        <li class="nav-item">
-                            <a class="nav-link mynav-link" href="#home">
-                                <span class="first">Home</span>
-                                <span class="second">Home</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mynav-link" href="#about_problem">
-                                <span class="first">About</span>
-                                <span class="second">About</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mynav-link" href="#portfolio">
-                                <span class="first">Portfolio</span>
-                                <span class="second">Portfolio</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mynav-link" href="#news">
-                                <span class="first">News</span>
-                                <span class="second">News</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mynav-link" href="#contact">
-                                <span class="first">Contact</span>
-                                <span class="second">Contact</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <div class="menu">
+          <div
+            class="links collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="nav nav-pills alcenter myul">
+              <li class="nav-item">
+                <a class="nav-link mynav-link" href="#home">
+                  <span class="first">Home</span>
+                  <span class="second">Home</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mynav-link" href="#about_problem">
+                  <span class="first">About</span>
+                  <span class="second">About</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mynav-link" href="#portfolio">
+                  <span class="first">Portfolio</span>
+                  <span class="second">Portfolio</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mynav-link" href="#news">
+                  <span class="first">News</span>
+                  <span class="second">News</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mynav-link" href="#contact">
+                  <span class="first">Contact</span>
+                  <span class="second">Contact</span></a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </div>
+    </nav> -->
+  <nav id="navbar-example2" class="navbar navbar-expand-lg sticky-top mybg-color px-3 pt-3 pb-3">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="https://marketifythemes.net/html/waxon/img/logo/dark.png"
+          alt="Logo" /></a>
+      <button class="navbar-toggler navbutton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars fa-2x"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="nav nav-pills alcenter myul">
+          <li class="nav-item">
+            <a class="nav-link mynav-link" href="#home"><span class="first">Home</span>
+              <span class="second">Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mynav-link" href="#about_problem"><span class="first">About</span>
+              <span class="second">About</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mynav-link" href="#portfolio"><span class="first">Portfolio</span>
+              <span class="second">Portfolio</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mynav-link" href="#news"><span class="first">News</span>
+              <span class="second">News</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mynav-link" href="#contact"><span class="first">Contact</span>
+              <span class="second">Contact</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
+  <!-- Main Section -->
 
-
-    <!-- Main Section -->
-
-    <div class="home" id="home">
-        <div class="background">
-            <div class="leftpart"></div>
-            <div class="rightpart">
-                <div class="inner">
-                    <div class="image"></div>
-                </div>
-            </div>
+  <div class="home" id="home">
+    <div class="background">
+      <div class="leftpart"></div>
+      <div class="rightpart">
+        <div class="inner">
+          <div class="image"></div>
         </div>
-        <div class="header">
-            <div class="container">
-                <div class="header_inner">
-                    <div class="name">
-                        <h3 class="stroke">Bernard</h3>
-                        <h3>Sydney</h3>
-                        <span>Creative Web &amp; App Developer</span>
-                    </div>
-                </div>
-                <div class="line_animation" data-skin="dark" data-position="">
-                    <div class="line_wrapper">
-                        <div class="line"></div>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </div>
+    <div class="header">
+      <div class="container">
+        <div class="header_inner">
+          <div class="name">
+            <h3 class="stroke">Bernard</h3>
+            <h3>Sydney</h3>
+            <span>Creative Web &amp; App Developer</span>
+          </div>
         </div>
-    </div>
-
-
-    <!-- About -->
-    <div class="about" id="about_problem">
-        <div class="container">
-            <div class="about_inner">
-                <div class="left">
-                    <img src="img/2.jpeg" class="thumbnail" alt="" />
-                </div>
-                <div class="right">
-                    <div class="name">
-                        <h3>Bernard Sydney<span class="bg">About</span></h3>
-                        <span class="job">Creative Web &amp; App Developer</span>
-                    </div>
-                    <div class="text">
-                        <p>My name is Bernard Sydney. I am a Web Developer, and I'm very passionate and dedicated to my
-                            work.</p>
-                        <p>With 20 years experience as a professional Web developer, I have acquired the skills and
-                            knowledge necessary to make your project a success. I enjoy every step of the design
-                            process, from discussion and collaboration.</p>
-                    </div>
-
-                    <div class="btnn" type="button">
-                        <a href="#">
-                            <span>Learn More</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div class="line_animation" data-skin="dark" data-position="">
+          <div class="line_wrapper">
+            <div class="line"></div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 
-    
-    <!-- <div class="modal" id="Modal555">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-
-    <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-    </div>
-
-    <div class="modal-body">
-        Modal body..
-    </div>
-
-    <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-    </div>
-
-    </div>
-    </div>
-    </div> -->
-
-
-
-    <!-- WAXON SERVICES -->
-    <!-- Swiper -->
-    <div class="services">
-        <div class="container">
-            <div class="swiper mySwiper alcenter">
-
-                <div class="swiper-wrapper ">
-                    <div class="swiper-slide">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                            id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
-                            xml:space="preserve" class="svg replaced-svg">
-                            <g>
-                                <g>
-                                    <path
-                                        d="M0,15.845v420.259h164.332v30.049h-30.036v30.001h243.407v-30.001h-30.036v-30.049H512V15.845H0z M317.665,466.153    H194.334v-30.049h123.332V466.153z M481.999,406.103H30.001v-60.075h451.997V406.103z M481.999,316.027H30.001V45.847h451.997    V316.027z">
-                                    </path>
-                                </g>
-                            </g>
-                            <g>
-                                <g>
-                                    <polygon
-                                        points="203.943,126.712 182.729,105.498 107.29,180.937 182.729,256.375 203.943,235.161 149.718,180.937   ">
-                                    </polygon>
-                                </g>
-                            </g>
-                            <g>
-                                <g>
-                                    <polygon
-                                        points="329.271,105.498 308.057,126.712 362.282,180.937 308.057,235.161 329.271,256.375 404.709,180.937   ">
-                                    </polygon>
-                                </g>
-                            </g>
-                            <g>
-                                <g>
-
-                                    <rect x="166.742" y="165.947"
-                                        transform="matrix(0.1951 -0.9808 0.9808 0.1951 28.5815 396.7237)"
-                                        width="178.511" height="30.002"></rect>
-                                </g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                        </svg>
-                        <div class="details">
-                            <h3>Web Development</h3>
-                            <p>Web design is a similar process of creation, with the intention intention of the pre
-                                presenting...</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" enable-background="new 0 0 511.73 511.73"
-                            height="512" viewBox="0 0 511.73 511.73" width="512" class="svg replaced-svg">
-                            <g id="XMLID_837_">
-                                <path id="XMLID_853_"
-                                    d="m258.002 81.905c-.555-.006-1.104-.01-1.658-.01-36.652 0-71.396 14.032-97.988 39.616-27.006 25.981-42.411 60.803-43.376 98.05-.832 32.088 8.834 62.594 27.952 88.219 22.321 29.918 34.12 64.8 34.12 100.875v103.075h156.854l.018-98.865c0-37.491 12.314-73.727 35.612-104.79 18.46-24.612 28.217-53.925 28.217-84.769 0-37.482-14.516-72.8-40.874-99.445-26.337-26.624-61.452-41.524-98.877-41.956zm45.904 399.825h-96.854v-52.433h96.854zm-63.143-174.491c0-8.115 6.602-14.717 14.716-14.717s14.716 6.602 14.716 14.717c0 8.114-6.602 14.716-14.716 14.716s-14.716-6.601-14.716-14.716zm104.773-17.164c-24.415 32.553-38.508 70.066-41.155 109.223h-33.902v-49.939c17.3-6.179 29.717-22.724 29.717-42.12 0-24.657-20.06-44.717-44.716-44.717s-44.716 20.06-44.716 44.717c0 19.396 12.417 35.94 29.716 42.12v49.939h-33.651c-1.878-39.235-15.559-76.897-39.852-109.457-15.053-20.176-22.663-44.21-22.007-69.502 1.568-60.489 52.07-109.153 112.687-108.436 60.708.7 110.097 50.675 110.097 111.403-.001 24.301-7.684 47.39-22.218 66.769z">
-                                </path>
-                                <path id="XMLID_1294_"
-                                    d="m186.989 227.754 21.213 21.213c12.628-12.628 29.418-19.583 47.277-19.583s34.649 6.955 47.278 19.583l21.213-21.213c-18.295-18.295-42.618-28.37-68.491-28.37-25.872 0-50.196 10.075-68.49 28.37z">
-                                </path>
-                                <path id="XMLID_1295_" d="m241.251 0h30v36.554h-30z"></path>
-                                <path id="XMLID_1296_" d="m131.211 29.071h30v36.554h-30z"
-                                    transform="matrix(.866 -.5 .5 .866 -4.086 79.447)"></path>
-                                <path id="XMLID_1297_" d="m50.449 109.268h30v36.554h-30z"
-                                    transform="matrix(.5 -.866 .866 .5 -77.733 120.451)"></path>
-                                <path id="XMLID_1298_" d="m428.006 113.882h36.553v30h-36.553z"
-                                    transform="matrix(.866 -.5 .5 .866 -4.652 240.404)"></path>
-                                <path id="XMLID_1299_" d="m347.808 33.12h36.554v30h-36.554z"
-                                    transform="matrix(.5 -.866 .866 .5 141.368 341.098)"></path>
-                            </g>
-                        </svg>
-                        <div class="details">
-                            <h3>Creative Design</h3>
-                            <p>Web design is a similar process of creation, with the intention intention of the pre
-                                presenting...</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="1 -35 511.99993 511" class="svg replaced-svg">
-                            <path
-                                d="m121.453125 253.171875 63.554687 158.886719 82.75-82.753906 141.535157 112.503906 102.707031-441.308594-512 205.480469zm-39.933594-47.640625 244.046875-97.945312-194.074218 117.363281zm287.535157-89.25-161.980469 148.1875-19.484375 73.425781-36.035156-90.085937zm-149.851563 219.230469 9.816406-36.996094 15.144531 12.035156zm171.65625 53.394531-147.386719-117.152344 221.902344-203.007812zm0 0">
-                            </path>
-                        </svg>
-                        <div class="details">
-                            <h3>Brand Identity</h3>
-                            <p>Web design is a similar process of creation, with the intention intention of the pre
-                                presenting...</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                            id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
-                            xml:space="preserve" class="svg replaced-svg">
-                            <g>
-                                <g>
-                                    <path d="M0,0v512h512V0H0z M482,482H30V30h452V482z"></path>
-                                </g>
-                            </g>
-                            <g>
-                                <g>
-                                    <path
-                                        d="M213.102,181.6h-72.24V352h33.12v-57.12h40.32c29.531,0,53.04-25.713,53.04-56.64    C267.342,212,246.166,181.6,213.102,181.6z M212.382,265.84h-38.4v-55.2h36.96c14.057,0,22.8,13.2,22.8,27.6    C233.742,255,224,265.84,212.382,265.84z">
-                                    </path>
-                                </g>
-                            </g>
-                            <g>
-                                <g>
-                                    <path
-                                        d="M336.939,276.64c-4.642-1.118-24.72-4.39-24.72-15.84c0-9.175,7.531-14.16,19.2-14.16c15.831,0,30.079,9.12,36.48,13.92    l12.96-19.44c-6.881-6.079-21.609-17.28-49.2-17.28c-26.284,0-49.44,14.91-49.44,41.52c0,27.64,36.72,32.801,44.88,35.04    c9.757,2.723,27.6,6.225,27.6,17.04c0,8.81-8.449,13.92-20.64,13.92c-18.809,0-36.48-11.119-44.16-16.56l-12,20.16    c7.2,6.24,27.851,19.44,56.88,19.44c15.679,0,50.88-4.9,50.88-39.84C385.659,285,345.579,278.882,336.939,276.64z">
-                                    </path>
-                                </g>
-                            </g>
-                        </svg>
-                        <div class="details">
-                            <h3>Adobe Photoshop</h3>
-                            <p>Web design is a similar process of creation, with the intention intention of the pre
-                                presenting...</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- About -->
+  <div class="about" id="about_problem">
+    <div class="container">
+      <div class="about_inner">
+        <div class="left">
+          <img src="img/2.jpeg" class="thumbnail" alt="" />
         </div>
+        <div class="right">
+          <div class="name">
+            <h3>Bernard Sydney<span class="bg">About</span></h3>
+            <span class="job">Creative Web &amp; App Developer</span>
+          </div>
+          <div class="text">
+            <p>
+              My name is Bernard Sydney. I am a Web Developer, and I'm very
+              passionate and dedicated to my work.
+            </p>
+            <p>
+              With 20 years experience as a professional Web developer, I have
+              acquired the skills and knowledge necessary to make your project
+              a success. I enjoy every step of the design process, from
+              discussion and collaboration.
+            </p>
+          </div>
+          <div class="btnn" type="button">
+            <a href="#">
+              <span>Learn More</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <!-- ABOUT MODAL -->
+  <div class="waxon_tm_modalbox_about">
+    <div class="box_inner">
+      <div class="close">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
+          x="0px" y="0px" viewBox="0 0 511.995 511.995" style="enable-background:new 0 0 511.995 511.995;"
+          xml:space="preserve" class="svg replaced-svg">
+          <g>
+            <g>
+              <path
+                d="M437.126,74.939c-99.826-99.826-262.307-99.826-362.133,0C26.637,123.314,0,187.617,0,256.005    s26.637,132.691,74.993,181.047c49.923,49.923,115.495,74.874,181.066,74.874s131.144-24.951,181.066-74.874    C536.951,337.226,536.951,174.784,437.126,74.939z M409.08,409.006c-84.375,84.375-221.667,84.375-306.042,0    c-40.858-40.858-63.37-95.204-63.37-153.001s22.512-112.143,63.37-153.021c84.375-84.375,221.667-84.355,306.042,0    C493.435,187.359,493.435,324.651,409.08,409.006z">
+              </path>
+            </g>
+          </g>
+          <g>
+            <g>
+              <path
+                d="M341.525,310.827l-56.151-56.071l56.151-56.071c7.735-7.735,7.735-20.29,0.02-28.046    c-7.755-7.775-20.31-7.755-28.065-0.02l-56.19,56.111l-56.19-56.111c-7.755-7.735-20.31-7.755-28.065,0.02    c-7.735,7.755-7.735,20.31,0.02,28.046l56.151,56.071l-56.151,56.071c-7.755,7.735-7.755,20.29-0.02,28.046    c3.868,3.887,8.965,5.811,14.043,5.811s10.155-1.944,14.023-5.792l56.19-56.111l56.19,56.111    c3.868,3.868,8.945,5.792,14.023,5.792c5.078,0,10.175-1.944,14.043-5.811C349.28,331.117,349.28,318.562,341.525,310.827z">
+              </path>
+            </g>
+          </g>
 
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            slidesPerGroup: 2,
-            loop: true,
-            loopFillGroupWithBlank: true,
-            pagination: {
+        </svg>
+      </div>
+      <div class="description_wrap">
+        <div class="my_box">
+          <div class="left">
+            <div class="about_title">
+              <h3>Programming Skills</h3>
+            </div>
+            <div class="waxon_progress">
+              <div class="progress_inner" data-value="95">
+                <span><span class="label">Wordpress &amp; PHP</span><span class="number">95%</span></span>
+                <div class="background">
+                  <div class="bar">
+                    <div class="bar_in"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="progress_inner" data-value="80">
+                <span><span class="label">Javascript &amp; React</span><span class="number">80%</span></span>
+                <div class="background">
+                  <div class="bar">
+                    <div class="bar_in"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="progress_inner" data-value="90">
+                <span><span class="label">HTML &amp; CSS</span><span class="number">90%</span></span>
+                <div class="background">
+                  <div class="bar">
+                    <div class="bar_in"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="about_title">
+              <h3>Language Skills</h3>
+            </div>
+            <div class="waxon_progress">
+              <div class="progress_inner" data-value="95">
+                <span><span class="label">English</span><span class="number">95%</span></span>
+                <div class="background">
+                  <div class="bar">
+                    <div class="bar_in"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="progress_inner" data-value="90">
+                <span><span class="label">Japanese</span><span class="number">90%</span></span>
+                <div class="background">
+                  <div class="bar">
+                    <div class="bar_in"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="progress_inner" data-value="85">
+                <span><span class="label">Arabian</span><span class="number">85%</span></span>
+                <div class="background">
+                  <div class="bar">
+                    <div class="bar_in"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="counter">
+          <div class="about_title">
+            <h3>Fun Facts</h3>
+          </div>
+          <ul>
+            <li>
+              <div class="list_inner">
+                <h3>777+</h3>
+                <span>Projects Completed</span>
+              </div>
+            </li>
+            <li>
+              <div class="list_inner">
+                <h3>3K+</h3>
+                <span>Happy Clients</span>
+              </div>
+            </li>
+            <li>
+              <div class="list_inner">
+                <h3>9K+</h3>
+                <span>Lines of Code</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="partners">
+          <div class="about_title">
+            <h3>Our Partners</h3>
+          </div>
+          <!-- <ul class="owl-carousel">
+            <li class="item"><a href="#"><img src="img/partners/1.png" alt="" /></a></li>
+            <li class="item"><a href="#"><img src="img/partners/2.png" alt="" /></a></li>
+            <li class="item"><a href="#"><img src="img/partners/3.png" alt="" /></a></li>
+            <li class="item"><a href="#"><img src="img/partners/4.png" alt="" /></a></li>
+            <li class="item"><a href="#"><img src="img/partners/5.png" alt="" /></a></li>
+            <li class="item"><a href="#"><img src="img/partners/6.png" alt="" /></a></li>
+            <li class="item"><a href="#"><img src="img/partners/7.png" alt="" /></a></li>
+            <li class="item"><a href="#"><img src="img/partners/8.png" alt="" /></a></li>
+          </ul> -->
+
+          <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a href="#"><img src="img/partners/1.png" alt="" /></a></div>
+              <div class="swiper-slide"><a href="#"><img src="img/partners/2.png" alt="" /></a></div>
+              <div class="swiper-slide"><a href="#"><img src="img/partners/3.png" alt="" /></a></div>
+              <div class="swiper-slide"><a href="#"><img src="img/partners/4.png" alt="" /></a></div>
+              <div class="swiper-slide"><a href="#"><img src="img/partners/5.png" alt="" /></a></div>
+              <div class="swiper-slide"><a href="#"><img src="img/partners/6.png" alt="" /></a></div>
+              <div class="swiper-slide"><a href="#"><img src="img/partners/7.png" alt="" /></a></div>
+              <div class="swiper-slide"><a href="#"><img src="img/partners/8.png" alt="" /></a></div>
+            </div>
+
+          </div>
+
+          <!-- Swiper JS -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".mySwiper2", {
+              slidesPerView: 3,
+              spaceBetween: 30,
+              slidesPerGroup: 3,
+              loop: true,
+              loopFillGroupWithBlank: false,
+              pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
-
-    <!-- Portfolio -->
-    <div class="portfolio" id="portfolio">
-        <div class="container">
-            <div class="main_title">
-                <div class="title">
-                    <h3>Featured Works<span class="bg">Portfolio</span></h3>
-                </div>
-            </div>
-            <div class="portfolio_inner">
-                <ul class="gallery">
-                    <li class="cherry">
-                        <div class="list_inner">
-                            <div class="image">
-                                <img src="https://marketifythemes.net/html/waxon/img/thumbs/1-1.jpg" alt="" />
-                                <div class="main" data-img-url="img/portfolio/1.jpg"
-                                    style="background-image: url('img/portfolio/1.jpg');"></div>
-                            </div>
-                            <div class="title">
-                                <h3><a>Sweet Cherry</a></h3>
-                                <span><a>Vimeo</a></span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="avocado">
-                        <div class="list_inner">
-                            <div class="image">
-                                <img src="https://marketifythemes.net/html/waxon/img/thumbs/1-1.jpg" alt="" />
-                                <div class="main" data-img-url="img/portfolio/2.jpg"
-                                    style="background-image: url('img/portfolio/2.jpg');"></div>
-                            </div>
-                            <div class="title">
-                                <h3><a>Delicious Fruit</a></h3>
-                                <span><a>Youtube</a></span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="orange">
-                        <div class="list_inner">
-                            <div class="image">
-                                <img src="https://marketifythemes.net/html/waxon/img/thumbs/1-1.jpg" alt="" />
-                                <div class="main" data-img-url="img/portfolio/3.jpg"
-                                    style="background-image: url('img/portfolio/3.jpg');"></div>
-                            </div>
-                            <div class="title">
-                                <h3><a>Blue Lemon</a></h3>
-                                <span><a>Soundcloud</a></span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="phone">
-                        <div class="list_inner">
-                            <div class="image">
-                                <img src="https://marketifythemes.net/html/waxon/img/thumbs/1-1.jpg" alt="" />
-                                <div class="main" data-img-url="img/portfolio/4.jpg"
-                                    style="background-image: url('img/portfolio/4.jpg');"></div>
-                            </div>
-                            <div class="title">
-                                <h3><a>Yellow Phone</a></h3>
-                                <span><a>Image</a></span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="ice_cream">
-                        <div class="list_inner">
-                            <div class="image">
-                                <img src="https://marketifythemes.net/html/waxon/img/thumbs/1-1.jpg" alt="" />
-                                <div class="main" data-img-url="img/portfolio/5.jpg"
-                                    style="background-image: url('img/portfolio/5.jpg');"></div>
-                            </div>
-                            <div class="title">
-                                <h3><a>Ice Cream</a></h3>
-                                <span><a>Image</a></span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="bag">
-                        <div class="list_inner">
-                            <div class="image">
-                                <img src="https://marketifythemes.net/html/waxon/img/thumbs/1-1.jpg" alt="" />
-                                <div class="main" data-img-url="img/portfolio/6.jpg"
-                                    style="background-image: url('img/portfolio/6.jpg');"></div>
-                            </div>
-                            <div class="title">
-                                <h3><a>Good Present</a></h3>
-                                <span><a>Image</a></span>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+              },
+            });
+          </script>
         </div>
+      </div>
     </div>
+  </div>
 
-    <!-- TESTIMONIALS -->
-    <div class="testimonials">
-        <div class="container">
-            <div class="main_title">
-                <div class="title">
-                    <h3>What Clients Say<span class="bg">Testimonial</span></h3>
-                </div>
+
+  <!-- WAXON SERVICES -->
+  <!-- Swiper -->
+  <div class="services">
+    <div class="container">
+      <div class="swiper mySwiper alcenter">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
+              x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512" xml:space="preserve"
+              class="svg replaced-svg">
+              <g>
+                <g>
+                  <path
+                    d="M0,15.845v420.259h164.332v30.049h-30.036v30.001h243.407v-30.001h-30.036v-30.049H512V15.845H0z M317.665,466.153    H194.334v-30.049h123.332V466.153z M481.999,406.103H30.001v-60.075h451.997V406.103z M481.999,316.027H30.001V45.847h451.997    V316.027z">
+                  </path>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <polygon
+                    points="203.943,126.712 182.729,105.498 107.29,180.937 182.729,256.375 203.943,235.161 149.718,180.937   ">
+                  </polygon>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <polygon
+                    points="329.271,105.498 308.057,126.712 362.282,180.937 308.057,235.161 329.271,256.375 404.709,180.937   ">
+                  </polygon>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <rect x="166.742" y="165.947" transform="matrix(0.1951 -0.9808 0.9808 0.1951 28.5815 396.7237)"
+                    width="178.511" height="30.002"></rect>
+                </g>
+              </g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+              <g></g>
+            </svg>
+            <div class="details">
+              <h3>Web Development</h3>
+              <p>
+                Web design is a similar process of creation, with the
+                intention intention of the pre presenting...
+              </p>
             </div>
-            <div class="testimonials_inner">
-                <div class="left">
-                    <div class="quotes">
-                        <ul>
-                            <li class="active person1">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    version="1.1" id="Capa_1" x="0px" y="0px" width="475.082px" height="475.081px"
-                                    viewBox="0 0 475.082 475.081" style="enable-background:new 0 0 475.082 475.081;"
-                                    xml:space="preserve" class="svg replaced-svg">
-                                    <g>
-                                        <g>
-                                            <path
-                                                d="M164.454,36.547H54.818c-15.229,0-28.171,5.33-38.832,15.987C5.33,63.193,0,76.135,0,91.365v109.632    c0,15.229,5.327,28.169,15.986,38.826c10.66,10.656,23.606,15.988,38.832,15.988h63.953c7.611,0,14.084,2.666,19.414,7.994    c5.33,5.325,7.994,11.8,7.994,19.417v9.131c0,20.177-7.139,37.397-21.413,51.675c-14.275,14.271-31.499,21.409-51.678,21.409    H54.818c-4.952,0-9.233,1.813-12.851,5.427c-3.615,3.614-5.424,7.898-5.424,12.847v36.549c0,4.941,1.809,9.233,5.424,12.848    c3.621,3.613,7.898,5.427,12.851,5.427h18.271c19.797,0,38.688-3.86,56.676-11.566c17.987-7.707,33.546-18.131,46.68-31.265    c13.131-13.135,23.553-28.691,31.261-46.679c7.707-17.987,11.562-36.877,11.562-56.671V91.361c0-15.23-5.33-28.171-15.987-38.828    S179.679,36.547,164.454,36.547z">
-                                            </path>
-                                            <path
-                                                d="M459.089,52.534c-10.656-10.657-23.599-15.987-38.828-15.987H310.629c-15.229,0-28.171,5.33-38.828,15.987    c-10.656,10.66-15.984,23.601-15.984,38.831v109.632c0,15.229,5.328,28.169,15.984,38.826    c10.657,10.656,23.6,15.988,38.828,15.988h63.953c7.611,0,14.089,2.666,19.418,7.994c5.324,5.328,7.994,11.8,7.994,19.417v9.131    c0,20.177-7.139,37.397-21.416,51.675c-14.274,14.271-31.494,21.409-51.675,21.409h-18.274c-4.948,0-9.233,1.813-12.847,5.427    c-3.617,3.614-5.428,7.898-5.428,12.847v36.549c0,4.941,1.811,9.233,5.428,12.848c3.613,3.613,7.898,5.427,12.847,5.427h18.274    c19.794,0,38.684-3.86,56.674-11.566c17.984-7.707,33.541-18.131,46.676-31.265c13.134-13.135,23.562-28.695,31.265-46.679    c7.706-17.983,11.563-36.877,11.563-56.671V91.361C475.078,76.131,469.753,63.19,459.089,52.534z">
-                                            </path>
-                                        </g>
-                                    </g>
-                                </svg>
-                                <p class="text">Good overall template. I am getting back into coding and had a simple
-                                    question for the author. They responded within 30 minutes and answered my question.
-                                    Highly recommend.</p>
-                                <div class="details">
-                                    <div class="image">
-                                        <div class="main" data-img-url="img/about/1.jpg"
-                                            style="background-image: url(img/about/1.jpg);"></div>
-                                    </div>
-                                    <div class="short">
-                                        <h3 class="author"><span>Nelly Furtado</span></h3>
-                                        <h3 class="job"><span>App Developer</span></h3>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="person2">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    version="1.1" id="Capa_1" x="0px" y="0px" width="475.082px" height="475.081px"
-                                    viewBox="0 0 475.082 475.081" style="enable-background:new 0 0 475.082 475.081;"
-                                    xml:space="preserve" class="svg replaced-svg">
-                                    <g>
-                                        <g>
-                                            <path
-                                                d="M164.454,36.547H54.818c-15.229,0-28.171,5.33-38.832,15.987C5.33,63.193,0,76.135,0,91.365v109.632    c0,15.229,5.327,28.169,15.986,38.826c10.66,10.656,23.606,15.988,38.832,15.988h63.953c7.611,0,14.084,2.666,19.414,7.994    c5.33,5.325,7.994,11.8,7.994,19.417v9.131c0,20.177-7.139,37.397-21.413,51.675c-14.275,14.271-31.499,21.409-51.678,21.409    H54.818c-4.952,0-9.233,1.813-12.851,5.427c-3.615,3.614-5.424,7.898-5.424,12.847v36.549c0,4.941,1.809,9.233,5.424,12.848    c3.621,3.613,7.898,5.427,12.851,5.427h18.271c19.797,0,38.688-3.86,56.676-11.566c17.987-7.707,33.546-18.131,46.68-31.265    c13.131-13.135,23.553-28.691,31.261-46.679c7.707-17.987,11.562-36.877,11.562-56.671V91.361c0-15.23-5.33-28.171-15.987-38.828    S179.679,36.547,164.454,36.547z">
-                                            </path>
-                                            <path
-                                                d="M459.089,52.534c-10.656-10.657-23.599-15.987-38.828-15.987H310.629c-15.229,0-28.171,5.33-38.828,15.987    c-10.656,10.66-15.984,23.601-15.984,38.831v109.632c0,15.229,5.328,28.169,15.984,38.826    c10.657,10.656,23.6,15.988,38.828,15.988h63.953c7.611,0,14.089,2.666,19.418,7.994c5.324,5.328,7.994,11.8,7.994,19.417v9.131    c0,20.177-7.139,37.397-21.416,51.675c-14.274,14.271-31.494,21.409-51.675,21.409h-18.274c-4.948,0-9.233,1.813-12.847,5.427    c-3.617,3.614-5.428,7.898-5.428,12.847v36.549c0,4.941,1.811,9.233,5.428,12.848c3.613,3.613,7.898,5.427,12.847,5.427h18.274    c19.794,0,38.684-3.86,56.674-11.566c17.984-7.707,33.541-18.131,46.676-31.265c13.134-13.135,23.562-28.695,31.265-46.679    c7.706-17.983,11.563-36.877,11.563-56.671V91.361C475.078,76.131,469.753,63.19,459.089,52.534z">
-                                            </path>
-                                        </g>
-                                    </g>
-                                </svg>
-                                <p class="text">I can't believe I got support and my problem resolved in just minutes
-                                    from posting my question. Simply amazing team and amazing theme! Thank you very much
-                                    guys for excellent support! </p>
-                                <div class="details">
-                                    <div class="image">
-                                        <div class="main" data-img-url="img/about/2.jpg"
-                                            style="background-image: url(img/about/2.jpg);"></div>
-                                    </div>
-                                    <div class="short">
-                                        <h3 class="author"><span>Brian Ederson</span></h3>
-                                        <h3 class="job"><span>Web Designer</span></h3>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="person3">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    version="1.1" id="Capa_1" x="0px" y="0px" width="475.082px" height="475.081px"
-                                    viewBox="0 0 475.082 475.081" style="enable-background:new 0 0 475.082 475.081;"
-                                    xml:space="preserve" class="svg replaced-svg">
-                                    <g>
-                                        <g>
-                                            <path
-                                                d="M164.454,36.547H54.818c-15.229,0-28.171,5.33-38.832,15.987C5.33,63.193,0,76.135,0,91.365v109.632    c0,15.229,5.327,28.169,15.986,38.826c10.66,10.656,23.606,15.988,38.832,15.988h63.953c7.611,0,14.084,2.666,19.414,7.994    c5.33,5.325,7.994,11.8,7.994,19.417v9.131c0,20.177-7.139,37.397-21.413,51.675c-14.275,14.271-31.499,21.409-51.678,21.409    H54.818c-4.952,0-9.233,1.813-12.851,5.427c-3.615,3.614-5.424,7.898-5.424,12.847v36.549c0,4.941,1.809,9.233,5.424,12.848    c3.621,3.613,7.898,5.427,12.851,5.427h18.271c19.797,0,38.688-3.86,56.676-11.566c17.987-7.707,33.546-18.131,46.68-31.265    c13.131-13.135,23.553-28.691,31.261-46.679c7.707-17.987,11.562-36.877,11.562-56.671V91.361c0-15.23-5.33-28.171-15.987-38.828    S179.679,36.547,164.454,36.547z">
-                                            </path>
-                                            <path
-                                                d="M459.089,52.534c-10.656-10.657-23.599-15.987-38.828-15.987H310.629c-15.229,0-28.171,5.33-38.828,15.987    c-10.656,10.66-15.984,23.601-15.984,38.831v109.632c0,15.229,5.328,28.169,15.984,38.826    c10.657,10.656,23.6,15.988,38.828,15.988h63.953c7.611,0,14.089,2.666,19.418,7.994c5.324,5.328,7.994,11.8,7.994,19.417v9.131    c0,20.177-7.139,37.397-21.416,51.675c-14.274,14.271-31.494,21.409-51.675,21.409h-18.274c-4.948,0-9.233,1.813-12.847,5.427    c-3.617,3.614-5.428,7.898-5.428,12.847v36.549c0,4.941,1.811,9.233,5.428,12.848c3.613,3.613,7.898,5.427,12.847,5.427h18.274    c19.794,0,38.684-3.86,56.674-11.566c17.984-7.707,33.541-18.131,46.676-31.265c13.134-13.135,23.562-28.695,31.265-46.679    c7.706-17.983,11.563-36.877,11.563-56.671V91.361C475.078,76.131,469.753,63.19,459.089,52.534z">
-                                            </path>
-                                        </g>
-                                    </g>
-                                </svg>
-                                <p class="text">Awesome template, well written code and looks great on any platform. The
-                                    customer support is very helpful and as huge asset to this template. Overall a good
-                                    design, that I am quite happy with.</p>
-                                <div class="details">
-                                    <div class="image">
-                                        <div class="main" data-img-url="img/about/3.jpg"
-                                            style="background-image: url(img/about/3.jpg);"></div>
-                                    </div>
-                                    <div class="short">
-                                        <h3 class="author"><span>Steve Collins</span></h3>
-                                        <h3 class="job"><span>Artel Corp.</span></h3>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="right">
-                    <div class="image_list">
-                        <ul class="masonry" style="position: relative; height: 590px;" onclick="" id="person1">
-                            <li class="active masonry_item" style="position: absolute; left: 0px; top: 0px;">
-                                <div class="image">
-                                    <img src="https://marketifythemes.net/html/waxon/img/thumbs/3-4.jpg" alt="">
-                                    <div class="main" data-img-url="img/about/1.jpg"
-                                        style="background-image: url(img/about/1.jpg);"></div>
-                                </div>
-                            </li>
-                            <li class="masonry_item" style="position: absolute; left: 330px; top: 0px;" onclick=""
-                                id="person2">
-                                <div class="image">
-                                    <img src="https://marketifythemes.net/html/waxon/img/thumbs/4-3.jpg" alt="">
-                                    <div class="main" data-img-url="img/about/2.jpg"
-                                        style="background-image: url(img/about/2.jpg);"></div>
-                                </div>
-                            </li>
-                            <li class="masonry_item" style="position: absolute; left: 330px; top: 260px;">
-                                <div class="image">
-                                    <img src="https://marketifythemes.net/html/waxon/img/thumbs/1-1.jpg" alt=""
-                                        onclick="" id="person2">
-                                    <div class="main" data-img-url="img/about/3.jpg"
-                                        style="background-image: url(img/about/3.jpg);"></div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
+          </div>
+          <div class="swiper-slide">
+            <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" enable-background="new 0 0 511.73 511.73" height="512"
+              viewBox="0 0 511.73 511.73" width="512" class="svg replaced-svg">
+              <g id="XMLID_837_">
+                <path id="XMLID_853_"
+                  d="m258.002 81.905c-.555-.006-1.104-.01-1.658-.01-36.652 0-71.396 14.032-97.988 39.616-27.006 25.981-42.411 60.803-43.376 98.05-.832 32.088 8.834 62.594 27.952 88.219 22.321 29.918 34.12 64.8 34.12 100.875v103.075h156.854l.018-98.865c0-37.491 12.314-73.727 35.612-104.79 18.46-24.612 28.217-53.925 28.217-84.769 0-37.482-14.516-72.8-40.874-99.445-26.337-26.624-61.452-41.524-98.877-41.956zm45.904 399.825h-96.854v-52.433h96.854zm-63.143-174.491c0-8.115 6.602-14.717 14.716-14.717s14.716 6.602 14.716 14.717c0 8.114-6.602 14.716-14.716 14.716s-14.716-6.601-14.716-14.716zm104.773-17.164c-24.415 32.553-38.508 70.066-41.155 109.223h-33.902v-49.939c17.3-6.179 29.717-22.724 29.717-42.12 0-24.657-20.06-44.717-44.716-44.717s-44.716 20.06-44.716 44.717c0 19.396 12.417 35.94 29.716 42.12v49.939h-33.651c-1.878-39.235-15.559-76.897-39.852-109.457-15.053-20.176-22.663-44.21-22.007-69.502 1.568-60.489 52.07-109.153 112.687-108.436 60.708.7 110.097 50.675 110.097 111.403-.001 24.301-7.684 47.39-22.218 66.769z">
+                </path>
+                <path id="XMLID_1294_"
+                  d="m186.989 227.754 21.213 21.213c12.628-12.628 29.418-19.583 47.277-19.583s34.649 6.955 47.278 19.583l21.213-21.213c-18.295-18.295-42.618-28.37-68.491-28.37-25.872 0-50.196 10.075-68.49 28.37z">
+                </path>
+                <path id="XMLID_1295_" d="m241.251 0h30v36.554h-30z"></path>
+                <path id="XMLID_1296_" d="m131.211 29.071h30v36.554h-30z"
+                  transform="matrix(.866 -.5 .5 .866 -4.086 79.447)"></path>
+                <path id="XMLID_1297_" d="m50.449 109.268h30v36.554h-30z"
+                  transform="matrix(.5 -.866 .866 .5 -77.733 120.451)"></path>
+                <path id="XMLID_1298_" d="m428.006 113.882h36.553v30h-36.553z"
+                  transform="matrix(.866 -.5 .5 .866 -4.652 240.404)"></path>
+                <path id="XMLID_1299_" d="m347.808 33.12h36.554v30h-36.554z"
+                  transform="matrix(.5 -.866 .866 .5 141.368 341.098)"></path>
+              </g>
+            </svg>
+            <div class="details">
+              <h3>Creative Design</h3>
+              <p>
+                Web design is a similar process of creation, with the
+                intention intention of the pre presenting...
+              </p>
             </div>
+          </div>
+          <div class="swiper-slide">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="1 -35 511.99993 511" class="svg replaced-svg">
+              <path
+                d="m121.453125 253.171875 63.554687 158.886719 82.75-82.753906 141.535157 112.503906 102.707031-441.308594-512 205.480469zm-39.933594-47.640625 244.046875-97.945312-194.074218 117.363281zm287.535157-89.25-161.980469 148.1875-19.484375 73.425781-36.035156-90.085937zm-149.851563 219.230469 9.816406-36.996094 15.144531 12.035156zm171.65625 53.394531-147.386719-117.152344 221.902344-203.007812zm0 0">
+              </path>
+            </svg>
+            <div class="details">
+              <h3>Brand Identity</h3>
+              <p>
+                Web design is a similar process of creation, with the
+                intention intention of the pre presenting...
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
+              x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512" xml:space="preserve"
+              class="svg replaced-svg">
+              <g>
+                <g>
+                  <path d="M0,0v512h512V0H0z M482,482H30V30h452V482z"></path>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <path
+                    d="M213.102,181.6h-72.24V352h33.12v-57.12h40.32c29.531,0,53.04-25.713,53.04-56.64    C267.342,212,246.166,181.6,213.102,181.6z M212.382,265.84h-38.4v-55.2h36.96c14.057,0,22.8,13.2,22.8,27.6    C233.742,255,224,265.84,212.382,265.84z">
+                  </path>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <path
+                    d="M336.939,276.64c-4.642-1.118-24.72-4.39-24.72-15.84c0-9.175,7.531-14.16,19.2-14.16c15.831,0,30.079,9.12,36.48,13.92    l12.96-19.44c-6.881-6.079-21.609-17.28-49.2-17.28c-26.284,0-49.44,14.91-49.44,41.52c0,27.64,36.72,32.801,44.88,35.04    c9.757,2.723,27.6,6.225,27.6,17.04c0,8.81-8.449,13.92-20.64,13.92c-18.809,0-36.48-11.119-44.16-16.56l-12,20.16    c7.2,6.24,27.851,19.44,56.88,19.44c15.679,0,50.88-4.9,50.88-39.84C385.659,285,345.579,278.882,336.939,276.64z">
+                  </path>
+                </g>
+              </g>
+            </svg>
+            <div class="details">
+              <h3>Adobe Photoshop</h3>
+              <p>
+                Web design is a similar process of creation, with the
+                intention intention of the pre presenting...
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    <!-- LATEST NEWS -->
-    <div class="news" id="news">
-        <div class="container">
-            <div class="main_title">
-                <div class="title">
-                    <h3>Latest News<span class="bg">News</span></h3>
-                </div>
-            </div>
-            <div class="news_inner">
-                <ul>
-                    <li>
-                        <div class="list_inner">
-                            <div class="image">
-                                <img src="https://marketifythemes.net/html/waxon/img/thumbs/4-3.jpg" alt="" />
-                                <div class="main" data-img-url="img/news/1.jpg"
-                                    style="background-image: url('img/news/1.jpg');"></div>
-                                <a class="full_link" href="#"></a>
-                            </div>
-                            <div class="details">
-                                <div class="extra">
-                                    <p class="date">By <a href="#">Alex Watson</a> <span>10 May 2021</span></p>
-                                </div>
-                                <h3 class="title"><a href="#">Developers watch out for these burnout symptoms</a></h3>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list_inner">
-                            <div class="image">
-                                <img src="https://marketifythemes.net/html/waxon/img/thumbs/4-3.jpg" alt="" />
-                                <div class="main" data-img-url="img/news/2.jpg"
-                                    style="background-image: url('img/news/2.jpg');"></div>
-                            </div>
-                            <div class="details">
-                                <div class="extra">
-                                    <p class="date">By <a href="#">Bona Green</a> <span>05 April 2021</span></p>
-                                </div>
-                                <h3 class="title"><a href="#">How to be appreciated for your hard work as a
-                                        developer</a></h3>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="list_inner">
-                            <div class="image">
-                                <img src="https://marketifythemes.net/html/waxon/img/thumbs/4-3.jpg" alt="" />
-                                <div class="main" data-img-url="img/news/3.jpg"
-                                    style="background-image: url('img/news/3.jpg');"></div>
-                                <a class="full_link" href="#"></a>
-                            </div>
-                            <div class="details">
-                                <div class="extra">
-                                    <p class="date">By <a href="#">Ave Smith</a> <span>22 March 2021</span></p>
-                                </div>
-                                <h3 class="title"><a href="#">How designers and developers can collaborate better</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 2,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  <!-- Portfolio -->
+  <div class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="main_title">
+        <div class="title">
+          <h3>Featured Works<span class="bg">Portfolio</span></h3>
         </div>
-    </div>
-
-
-    <!-- CONTACT -->
-    <div class="contact" id="contact">
-        <div class="bg_image"></div>
-        <div class="container">
-            <div class="contact_inner">
-                <div class="main_title">
-                    <div class="title">
-                        <h3>Get in Touch<span class="bg">Contact</span></h3>
-                    </div>
-                </div>
-                <div class="description">
-                    <p>Please fill out the form on this section to contact with me. Or call between 9:00 a.m. and 8:00
-                        p.m. ET, Monday through Friday</p>
-                </div>
-                <div class="wrapper">
-                    <div class="left">
-                        <div class="fields">
-                            <form class="contact_form">
-                                <div class="first">
-                                    <ul>
-                                        <li>
-                                            <input id="name" type="text" placeholder=" Name">
-                                        </li>
-                                        <li>
-                                            <input id="email" type="text" placeholder=" Email">
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="last">
-                                    <input id="message" placeholder=" Message"></textarea>
-                                </div>
-                                <div class="btnn">
-                                    <a id="send_message" href="#">
-                                        <span>Send Message</span>
-                                    </a>
-                                </div>
-                            </form>
-                        </div>
-
-                    </div>
-
-                    <div class="right">
-                        <div class="google_map">
-                            <div class="map">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.4524710320516!2d49.84949091575871!3d40.37666336599863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307da84d07764f%3A0xabaa0431ef903b77!2sFrench-Azerbaijani%20University!5e0!3m2!1sen!2s!4v1672151948418!5m2!1sen!2s"
-                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="portfolio_filter">
+          <ul>
+            <li>
+              <a href="#" class="current" data-filter="*">
+                <span class="first">All</span>
+                <span class="second">All</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-filter=".vimeo">
+                <span class="first">Vimeo</span>
+                <span class="second">Vimeo</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-filter=".youtube">
+                <span class="first">Youtube</span>
+                <span class="second">Youtube</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-filter=".soundcloud">
+                <span class="first">Soundcloud</span>
+                <span class="second">Soundcloud</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" data-filter=".image">
+                <span class="first">Image</span>
+                <span class="second">Image</span>
+              </a>
+            </li>
+          </ul>
+          <div class="wrapper">
+            <a href="#"><span class="trigger"></span></a>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <!-- FOOTER -->
-    <div class="footer">
-        <div class="container">
-            <div class="footer_inner">
-                <ul>
-                    <li>
-                        <span>WAXON</span>
-                        <span>PORTFOLIO TEMPLATE</span>
-                    </li>
-                    <li>
-                        <span>Brook 103,</span>
-                        <span>90021 New York, USA</span>
-                    </li>
-                    <li>
-                        <span><a href="#"><span class="__cf_email__" data-cfemail="">user123@gmail.com</span></a></span>
-                        <span>+77 033 442 55 57</span>
-                    </li>
-                    <li>
-                        <div class="social">
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <span class="first"><i class="fa-brands fa-facebook-f"></i></span>
-                                        <span class="second"><i class="fa-brands fa-facebook-f"></i></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="first"><i class="fa-brands fa-twitter"></i></span>
-                                        <span class="second"><i class="fa-brands fa-twitter"></i></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <a href="#">
-                                            <span class="first"><i class="fa-brands fa-instagram"></i></span>
-                                            <span class="second"><i class="fa-brands fa-instagram"></i></span>
-                                        </a>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="first"><i class="fa-brands fa-soundcloud"></i></span>
-                                        <span class="second"><i class="fa-brands fa-soundcloud"></i></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="first"><i class="fa-brands fa-youtube"></i></span>
-                                        <span class="second"><i class="fa-brands fa-youtube"></i></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="first"><i class="fa-brands fa-vk"></i></span>
-                                        <span class="second"><i class="fa-brands fa-vk"></i></span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
+      <div class="portfolio_inner">
+        <ul class="gallery">
+          <li class="vimeo">
+            <div class="list_inner">
+              <div class="image">
+                <img src="https://marketifythemes.net/html/waxon/img/thumbs/1-1.jpg" alt="" />
+                <div class="main" data-img-url="img/portfolio/1.jpg"
+                  style="background-image: url('img/portfolio/1.jpg')">
+                </div>
+                <a class="full_link popup-vimeo" href="https://vimeo.com/312334044"></a>
+              </div>
+              <div class="title">
+                <h3><a>Sweet Cherry</a></h3>
+                <span><a>Vimeo</a></span>
+              </div>
             </div>
-        </div>
+          </li>
+          <li class="youtube">
+            <div class="list_inner">
+              <div class="image">
+                <img src="https://marketifythemes.net/html/waxon/img/thumbs/1-1.jpg" alt="" />
+                <div class="main" data-img-url="img/portfolio/2.jpg"
+                  style="background-image: url('img/portfolio/2.jpg')">
+                </div>
+                <a class="full_link popup-youtube" href="https://www.youtube.com/watch?v=Amq-qlqbjYA"></a>
+              </div>
+              <div class="title">
+                <h3><a>Delicious Fruit</a></h3>
+                <span><a>Youtube</a></span>
+              </div>
+            </div>
+          </li>
+          <li class="soundcloud">
+            <div class="list_inner">
+              <div class="image">
+                <img src="https://marketifythemes.net/html/waxon/img/thumbs/1-1.jpg" alt="" />
+                <div class="main" data-img-url="img/portfolio/3.jpg"
+                  style="background-image: url('img/portfolio/3.jpg')">
+                </div>
+                <a class="full_link soundcloude_link mfp-iframe audio"
+                  href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/252739311&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=truehttps://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/252739311&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></a>
+              </div>
+              <div class="title">
+                <h3><a>Blue Lemon</a></h3>
+                <span><a>Soundcloud</a></span>
+              </div>
+            </div>
+          </li>
+          <li class="image">
+            <div class="list_inner">
+              <div class="image">
+                <img src="https://marketifythemes.net/html/waxon/img/thumbs/1-1.jpg" alt="" />
+                <div class="main" data-img-url="img/portfolio/4.jpg"
+                  style="background-image: url('img/portfolio/4.jpg')">
+                </div>
+                <a class="full_link zoom" href="img/portfolio/4.jpg"></a>
+              </div>
+              <div class="title">
+                <h3><a>Yellow Phone</a></h3>
+                <span><a>Image</a></span>
+              </div>
+            </div>
+          </li>
+          <li class="image">
+            <div class="list_inner">
+              <div class="image">
+                <img src="https://marketifythemes.net/html/waxon/img/thumbs/1-1.jpg" alt="" />
+                <div class="main" data-img-url="img/portfolio/5.jpg"
+                  style="background-image: url('img/portfolio/5.jpg')">
+                </div>
+                <a class="full_link zoom" href="img/portfolio/5.jpg"></a>
+
+              </div>
+              <div class="title">
+                <h3><a>Ice Cream</a></h3>
+                <span><a>Image</a></span>
+              </div>
+            </div>
+          </li>
+          <li class="image">
+            <div class="list_inner">
+              <div class="image">
+                <img src="https://marketifythemes.net/html/waxon/img/thumbs/1-1.jpg" alt="" />
+                <div class="main" data-img-url="img/portfolio/6.jpg"
+                  style="background-image: url('img/portfolio/6.jpg')">
+                </div>
+                <a class="full_link zoom" href="img/portfolio/6.jpg"></a>
+              </div>
+              <div class="title">
+                <h3><a>Good Present</a></h3>
+                <span><a>Image</a></span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <!-- <div class="testimonials">
+    <div class="container">
+      <div class="main_title">
+        <div class="title">
+          <h3>What Clients Say<span class="bg">Testimonial</span></h3>
+        </div>
+      </div>
+      <div class="testimonials_inner">
+        <div class="left">
+          <div class="quotes">
+            <ul>
+              <li class="active person1">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                  id="Capa_1" x="0px" y="0px" width="475.082px" height="475.081px" viewBox="0 0 475.082 475.081"
+                  style="enable-background: new 0 0 475.082 475.081" xml:space="preserve" class="svg replaced-svg">
+                  <g>
+                    <g>
+                      <path
+                        d="M164.454,36.547H54.818c-15.229,0-28.171,5.33-38.832,15.987C5.33,63.193,0,76.135,0,91.365v109.632    c0,15.229,5.327,28.169,15.986,38.826c10.66,10.656,23.606,15.988,38.832,15.988h63.953c7.611,0,14.084,2.666,19.414,7.994    c5.33,5.325,7.994,11.8,7.994,19.417v9.131c0,20.177-7.139,37.397-21.413,51.675c-14.275,14.271-31.499,21.409-51.678,21.409    H54.818c-4.952,0-9.233,1.813-12.851,5.427c-3.615,3.614-5.424,7.898-5.424,12.847v36.549c0,4.941,1.809,9.233,5.424,12.848    c3.621,3.613,7.898,5.427,12.851,5.427h18.271c19.797,0,38.688-3.86,56.676-11.566c17.987-7.707,33.546-18.131,46.68-31.265    c13.131-13.135,23.553-28.691,31.261-46.679c7.707-17.987,11.562-36.877,11.562-56.671V91.361c0-15.23-5.33-28.171-15.987-38.828    S179.679,36.547,164.454,36.547z">
+                      </path>
+                      <path
+                        d="M459.089,52.534c-10.656-10.657-23.599-15.987-38.828-15.987H310.629c-15.229,0-28.171,5.33-38.828,15.987    c-10.656,10.66-15.984,23.601-15.984,38.831v109.632c0,15.229,5.328,28.169,15.984,38.826    c10.657,10.656,23.6,15.988,38.828,15.988h63.953c7.611,0,14.089,2.666,19.418,7.994c5.324,5.328,7.994,11.8,7.994,19.417v9.131    c0,20.177-7.139,37.397-21.416,51.675c-14.274,14.271-31.494,21.409-51.675,21.409h-18.274c-4.948,0-9.233,1.813-12.847,5.427    c-3.617,3.614-5.428,7.898-5.428,12.847v36.549c0,4.941,1.811,9.233,5.428,12.848c3.613,3.613,7.898,5.427,12.847,5.427h18.274    c19.794,0,38.684-3.86,56.674-11.566c17.984-7.707,33.541-18.131,46.676-31.265c13.134-13.135,23.562-28.695,31.265-46.679    c7.706-17.983,11.563-36.877,11.563-56.671V91.361C475.078,76.131,469.753,63.19,459.089,52.534z">
+                      </path>
+                    </g>
+                  </g>
+                </svg>
+                <p class="text">
+                  Good overall template. I am getting back into coding and had
+                  a simple question for the author. They responded within 30
+                  minutes and answered my question. Highly recommend.
+                </p>
+                <div class="details">
+                  <div class="image">
+                    <div class="main" data-img-url="img/about/1.jpg" style="background-image: url(img/about/1.jpg)">
+                    </div>
+                  </div>
+                  <div class="short">
+                    <h3 class="author"><span>Nelly Furtado</span></h3>
+                    <h3 class="job"><span>App Developer</span></h3>
+                  </div>
+                </div>
+              </li>
+              <li class="person2">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                  id="Capa_1" x="0px" y="0px" width="475.082px" height="475.081px" viewBox="0 0 475.082 475.081"
+                  style="enable-background: new 0 0 475.082 475.081" xml:space="preserve" class="svg replaced-svg">
+                  <g>
+                    <g>
+                      <path
+                        d="M164.454,36.547H54.818c-15.229,0-28.171,5.33-38.832,15.987C5.33,63.193,0,76.135,0,91.365v109.632    c0,15.229,5.327,28.169,15.986,38.826c10.66,10.656,23.606,15.988,38.832,15.988h63.953c7.611,0,14.084,2.666,19.414,7.994    c5.33,5.325,7.994,11.8,7.994,19.417v9.131c0,20.177-7.139,37.397-21.413,51.675c-14.275,14.271-31.499,21.409-51.678,21.409    H54.818c-4.952,0-9.233,1.813-12.851,5.427c-3.615,3.614-5.424,7.898-5.424,12.847v36.549c0,4.941,1.809,9.233,5.424,12.848    c3.621,3.613,7.898,5.427,12.851,5.427h18.271c19.797,0,38.688-3.86,56.676-11.566c17.987-7.707,33.546-18.131,46.68-31.265    c13.131-13.135,23.553-28.691,31.261-46.679c7.707-17.987,11.562-36.877,11.562-56.671V91.361c0-15.23-5.33-28.171-15.987-38.828    S179.679,36.547,164.454,36.547z">
+                      </path>
+                      <path
+                        d="M459.089,52.534c-10.656-10.657-23.599-15.987-38.828-15.987H310.629c-15.229,0-28.171,5.33-38.828,15.987    c-10.656,10.66-15.984,23.601-15.984,38.831v109.632c0,15.229,5.328,28.169,15.984,38.826    c10.657,10.656,23.6,15.988,38.828,15.988h63.953c7.611,0,14.089,2.666,19.418,7.994c5.324,5.328,7.994,11.8,7.994,19.417v9.131    c0,20.177-7.139,37.397-21.416,51.675c-14.274,14.271-31.494,21.409-51.675,21.409h-18.274c-4.948,0-9.233,1.813-12.847,5.427    c-3.617,3.614-5.428,7.898-5.428,12.847v36.549c0,4.941,1.811,9.233,5.428,12.848c3.613,3.613,7.898,5.427,12.847,5.427h18.274    c19.794,0,38.684-3.86,56.674-11.566c17.984-7.707,33.541-18.131,46.676-31.265c13.134-13.135,23.562-28.695,31.265-46.679    c7.706-17.983,11.563-36.877,11.563-56.671V91.361C475.078,76.131,469.753,63.19,459.089,52.534z">
+                      </path>
+                    </g>
+                  </g>
+                </svg>
+                <p class="text">
+                  I can't believe I got support and my problem resolved in
+                  just minutes from posting my question. Simply amazing team
+                  and amazing theme! Thank you very much guys for excellent
+                  support!
+                </p>
+                <div class="details">
+                  <div class="image">
+                    <div class="main" data-img-url="img/about/2.jpg" style="background-image: url(img/about/2.jpg)">
+                    </div>
+                  </div>
+                  <div class="short">
+                    <h3 class="author"><span>Brian Ederson</span></h3>
+                    <h3 class="job"><span>Web Designer</span></h3>
+                  </div>
+                </div>
+              </li>
+              <li class="person3">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                  id="Capa_1" x="0px" y="0px" width="475.082px" height="475.081px" viewBox="0 0 475.082 475.081"
+                  style="enable-background: new 0 0 475.082 475.081" xml:space="preserve" class="svg replaced-svg">
+                  <g>
+                    <g>
+                      <path
+                        d="M164.454,36.547H54.818c-15.229,0-28.171,5.33-38.832,15.987C5.33,63.193,0,76.135,0,91.365v109.632    c0,15.229,5.327,28.169,15.986,38.826c10.66,10.656,23.606,15.988,38.832,15.988h63.953c7.611,0,14.084,2.666,19.414,7.994    c5.33,5.325,7.994,11.8,7.994,19.417v9.131c0,20.177-7.139,37.397-21.413,51.675c-14.275,14.271-31.499,21.409-51.678,21.409    H54.818c-4.952,0-9.233,1.813-12.851,5.427c-3.615,3.614-5.424,7.898-5.424,12.847v36.549c0,4.941,1.809,9.233,5.424,12.848    c3.621,3.613,7.898,5.427,12.851,5.427h18.271c19.797,0,38.688-3.86,56.676-11.566c17.987-7.707,33.546-18.131,46.68-31.265    c13.131-13.135,23.553-28.691,31.261-46.679c7.707-17.987,11.562-36.877,11.562-56.671V91.361c0-15.23-5.33-28.171-15.987-38.828    S179.679,36.547,164.454,36.547z">
+                      </path>
+                      <path
+                        d="M459.089,52.534c-10.656-10.657-23.599-15.987-38.828-15.987H310.629c-15.229,0-28.171,5.33-38.828,15.987    c-10.656,10.66-15.984,23.601-15.984,38.831v109.632c0,15.229,5.328,28.169,15.984,38.826    c10.657,10.656,23.6,15.988,38.828,15.988h63.953c7.611,0,14.089,2.666,19.418,7.994c5.324,5.328,7.994,11.8,7.994,19.417v9.131    c0,20.177-7.139,37.397-21.416,51.675c-14.274,14.271-31.494,21.409-51.675,21.409h-18.274c-4.948,0-9.233,1.813-12.847,5.427    c-3.617,3.614-5.428,7.898-5.428,12.847v36.549c0,4.941,1.811,9.233,5.428,12.848c3.613,3.613,7.898,5.427,12.847,5.427h18.274    c19.794,0,38.684-3.86,56.674-11.566c17.984-7.707,33.541-18.131,46.676-31.265c13.134-13.135,23.562-28.695,31.265-46.679    c7.706-17.983,11.563-36.877,11.563-56.671V91.361C475.078,76.131,469.753,63.19,459.089,52.534z">
+                      </path>
+                    </g>
+                  </g>
+                </svg>
+                <p class="text">
+                  Awesome template, well written code and looks great on any
+                  platform. The customer support is very helpful and as huge
+                  asset to this template. Overall a good design, that I am
+                  quite happy with.
+                </p>
+                <div class="details">
+                  <div class="image">
+                    <div class="main" data-img-url="img/about/3.jpg" style="background-image: url(img/about/3.jpg)">
+                    </div>
+                  </div>
+                  <div class="short">
+                    <h3 class="author"><span>Steve Collins</span></h3>
+                    <h3 class="job"><span>Artel Corp.</span></h3>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="image_list">
+            <ul class="masonry" style="position: relative; height: 590px" onclick="" id="person1">
+              <li class="active masonry_item" style="position: absolute; left: 0px; top: 0px">
+                <div class="image">
+                  <img src="https://marketifythemes.net/html/waxon/img/thumbs/3-4.jpg" alt="" />
+                  <div class="main" data-img-url="img/about/1.jpg" style="background-image: url(img/about/1.jpg)"></div>
+                </div>
+              </li>
+              <li class="masonry_item" style="position: absolute; left: 330px; top: 0px" onclick="" id="person2">
+                <div class="image">
+                  <img src="https://marketifythemes.net/html/waxon/img/thumbs/4-3.jpg" alt="" />
+                  <div class="main" data-img-url="img/about/2.jpg" style="background-image: url(img/about/2.jpg)"></div>
+                </div>
+              </li>
+              <li class="masonry_item" style="position: absolute; left: 330px; top: 260px">
+                <div class="image">
+                  <img src="https://marketifythemes.net/html/waxon/img/thumbs/1-1.jpg" alt="" onclick="" id="person2" />
+                  <div class="main" data-img-url="img/about/3.jpg" style="background-image: url(img/about/3.jpg)"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="waxon_tm_testimonials">
+    <div class="container">
+      <div class="main_title">
+        <div class="title">
+          <h3>What Clients Say<span class="bg">Testimonial</span></h3>
+        </div>
+      </div>
+      <div class="testi_inner">
+        <div class="left">
+          <div class="quote_list">
+            <ul>
+              <li class="active">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                  id="Capa_1" x="0px" y="0px" width="475.082px" height="475.081px" viewBox="0 0 475.082 475.081"
+                  style="enable-background: new 0 0 475.082 475.081" xml:space="preserve" class="svg replaced-svg">
+                  <g>
+                    <g>
+                      <path
+                        d="M164.454,36.547H54.818c-15.229,0-28.171,5.33-38.832,15.987C5.33,63.193,0,76.135,0,91.365v109.632    c0,15.229,5.327,28.169,15.986,38.826c10.66,10.656,23.606,15.988,38.832,15.988h63.953c7.611,0,14.084,2.666,19.414,7.994    c5.33,5.325,7.994,11.8,7.994,19.417v9.131c0,20.177-7.139,37.397-21.413,51.675c-14.275,14.271-31.499,21.409-51.678,21.409    H54.818c-4.952,0-9.233,1.813-12.851,5.427c-3.615,3.614-5.424,7.898-5.424,12.847v36.549c0,4.941,1.809,9.233,5.424,12.848    c3.621,3.613,7.898,5.427,12.851,5.427h18.271c19.797,0,38.688-3.86,56.676-11.566c17.987-7.707,33.546-18.131,46.68-31.265    c13.131-13.135,23.553-28.691,31.261-46.679c7.707-17.987,11.562-36.877,11.562-56.671V91.361c0-15.23-5.33-28.171-15.987-38.828    S179.679,36.547,164.454,36.547z">
+                      </path>
+                      <path
+                        d="M459.089,52.534c-10.656-10.657-23.599-15.987-38.828-15.987H310.629c-15.229,0-28.171,5.33-38.828,15.987    c-10.656,10.66-15.984,23.601-15.984,38.831v109.632c0,15.229,5.328,28.169,15.984,38.826    c10.657,10.656,23.6,15.988,38.828,15.988h63.953c7.611,0,14.089,2.666,19.418,7.994c5.324,5.328,7.994,11.8,7.994,19.417v9.131    c0,20.177-7.139,37.397-21.416,51.675c-14.274,14.271-31.494,21.409-51.675,21.409h-18.274c-4.948,0-9.233,1.813-12.847,5.427    c-3.617,3.614-5.428,7.898-5.428,12.847v36.549c0,4.941,1.811,9.233,5.428,12.848c3.613,3.613,7.898,5.427,12.847,5.427h18.274    c19.794,0,38.684-3.86,56.674-11.566c17.984-7.707,33.541-18.131,46.676-31.265c13.134-13.135,23.562-28.695,31.265-46.679    c7.706-17.983,11.563-36.877,11.563-56.671V91.361C475.078,76.131,469.753,63.19,459.089,52.534z">
+                      </path>
+                    </g>
+                  </g>
+                </svg>
+                <p class="text">Good overall template. I am getting back into coding and had a simple question for the
+                  author. They responded within 30 minutes and answered my question. Highly recommend.</p>
+                <div class="details">
+                  <div class="image">
+                    <div class="main" data-img-url="img/about/1.jpg"></div>
+                  </div>
+                  <div class="short">
+                    <h3 class="author"><span>Nelly Furtado</span></h3>
+                    <h3 class="job"><span>App Developer</span></h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                  id="Capa_1" x="0px" y="0px" width="475.082px" height="475.081px" viewBox="0 0 475.082 475.081"
+                  style="enable-background: new 0 0 475.082 475.081" xml:space="preserve" class="svg replaced-svg">
+                  <g>
+                    <g>
+                      <path
+                        d="M164.454,36.547H54.818c-15.229,0-28.171,5.33-38.832,15.987C5.33,63.193,0,76.135,0,91.365v109.632    c0,15.229,5.327,28.169,15.986,38.826c10.66,10.656,23.606,15.988,38.832,15.988h63.953c7.611,0,14.084,2.666,19.414,7.994    c5.33,5.325,7.994,11.8,7.994,19.417v9.131c0,20.177-7.139,37.397-21.413,51.675c-14.275,14.271-31.499,21.409-51.678,21.409    H54.818c-4.952,0-9.233,1.813-12.851,5.427c-3.615,3.614-5.424,7.898-5.424,12.847v36.549c0,4.941,1.809,9.233,5.424,12.848    c3.621,3.613,7.898,5.427,12.851,5.427h18.271c19.797,0,38.688-3.86,56.676-11.566c17.987-7.707,33.546-18.131,46.68-31.265    c13.131-13.135,23.553-28.691,31.261-46.679c7.707-17.987,11.562-36.877,11.562-56.671V91.361c0-15.23-5.33-28.171-15.987-38.828    S179.679,36.547,164.454,36.547z">
+                      </path>
+                      <path
+                        d="M459.089,52.534c-10.656-10.657-23.599-15.987-38.828-15.987H310.629c-15.229,0-28.171,5.33-38.828,15.987    c-10.656,10.66-15.984,23.601-15.984,38.831v109.632c0,15.229,5.328,28.169,15.984,38.826    c10.657,10.656,23.6,15.988,38.828,15.988h63.953c7.611,0,14.089,2.666,19.418,7.994c5.324,5.328,7.994,11.8,7.994,19.417v9.131    c0,20.177-7.139,37.397-21.416,51.675c-14.274,14.271-31.494,21.409-51.675,21.409h-18.274c-4.948,0-9.233,1.813-12.847,5.427    c-3.617,3.614-5.428,7.898-5.428,12.847v36.549c0,4.941,1.811,9.233,5.428,12.848c3.613,3.613,7.898,5.427,12.847,5.427h18.274    c19.794,0,38.684-3.86,56.674-11.566c17.984-7.707,33.541-18.131,46.676-31.265c13.134-13.135,23.562-28.695,31.265-46.679    c7.706-17.983,11.563-36.877,11.563-56.671V91.361C475.078,76.131,469.753,63.19,459.089,52.534z">
+                      </path>
+                    </g>
+                  </g>
+                </svg>
+                <p class="text">I can't believe I got support and my problem resolved in just minutes from posting my
+                  question. Simply amazing team and amazing theme! Thank you very much guys for excellent support! </p>
+                <div class="details">
+                  <div class="image">
+                    <div class="main" data-img-url="img/about/2.jpg"></div>
+                  </div>
+                  <div class="short">
+                    <h3 class="author"><span>Brian Ederson</span></h3>
+                    <h3 class="job"><span>Web Designer</span></h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                  id="Capa_1" x="0px" y="0px" width="475.082px" height="475.081px" viewBox="0 0 475.082 475.081"
+                  style="enable-background: new 0 0 475.082 475.081" xml:space="preserve" class="svg replaced-svg">
+                  <g>
+                    <g>
+                      <path
+                        d="M164.454,36.547H54.818c-15.229,0-28.171,5.33-38.832,15.987C5.33,63.193,0,76.135,0,91.365v109.632    c0,15.229,5.327,28.169,15.986,38.826c10.66,10.656,23.606,15.988,38.832,15.988h63.953c7.611,0,14.084,2.666,19.414,7.994    c5.33,5.325,7.994,11.8,7.994,19.417v9.131c0,20.177-7.139,37.397-21.413,51.675c-14.275,14.271-31.499,21.409-51.678,21.409    H54.818c-4.952,0-9.233,1.813-12.851,5.427c-3.615,3.614-5.424,7.898-5.424,12.847v36.549c0,4.941,1.809,9.233,5.424,12.848    c3.621,3.613,7.898,5.427,12.851,5.427h18.271c19.797,0,38.688-3.86,56.676-11.566c17.987-7.707,33.546-18.131,46.68-31.265    c13.131-13.135,23.553-28.691,31.261-46.679c7.707-17.987,11.562-36.877,11.562-56.671V91.361c0-15.23-5.33-28.171-15.987-38.828    S179.679,36.547,164.454,36.547z">
+                      </path>
+                      <path
+                        d="M459.089,52.534c-10.656-10.657-23.599-15.987-38.828-15.987H310.629c-15.229,0-28.171,5.33-38.828,15.987    c-10.656,10.66-15.984,23.601-15.984,38.831v109.632c0,15.229,5.328,28.169,15.984,38.826    c10.657,10.656,23.6,15.988,38.828,15.988h63.953c7.611,0,14.089,2.666,19.418,7.994c5.324,5.328,7.994,11.8,7.994,19.417v9.131    c0,20.177-7.139,37.397-21.416,51.675c-14.274,14.271-31.494,21.409-51.675,21.409h-18.274c-4.948,0-9.233,1.813-12.847,5.427    c-3.617,3.614-5.428,7.898-5.428,12.847v36.549c0,4.941,1.811,9.233,5.428,12.848c3.613,3.613,7.898,5.427,12.847,5.427h18.274    c19.794,0,38.684-3.86,56.674-11.566c17.984-7.707,33.541-18.131,46.676-31.265c13.134-13.135,23.562-28.695,31.265-46.679    c7.706-17.983,11.563-36.877,11.563-56.671V91.361C475.078,76.131,469.753,63.19,459.089,52.534z">
+                      </path>
+                    </g>
+                  </g>
+                </svg>
+                <p class="text">Awesome template, well written code and looks great on any platform. The customer
+                  support is very helpful and as huge asset to this template. Overall a good design, that I am quite
+                  happy with.</p>
+                <div class="details">
+                  <div class="image">
+                    <div class="main" data-img-url="img/about/3.jpg"></div>
+                  </div>
+                  <div class="short">
+                    <h3 class="author"><span>Steve Collins</span></h3>
+                    <h3 class="job"><span>Artel Corp.</span></h3>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right">
+          <div class="image_list">
+            <ul class="masonry" style="position: relative; height: 590px" onclick="" id="person1">
+              <li class="active masonry_item" style="position: absolute; left: 0px; top: 0px">
+                <div class="image">
+                  <img src="https://marketifythemes.net/html/waxon/img/thumbs/3-4.jpg" alt="" />
+                  <div class="main" data-img-url="img/about/1.jpg" style="background-image: url(img/about/1.jpg)"></div>
+                </div>
+              </li>
+              <li class="masonry_item" style="position: absolute; left: 330px; top: 0px" onclick="" id="person2">
+                <div class="image">
+                  <img src="https://marketifythemes.net/html/waxon/img/thumbs/4-3.jpg" alt="" />
+                  <div class="main" data-img-url="img/about/2.jpg" style="background-image: url(img/about/2.jpg)"></div>
+                </div>
+              </li>
+              <li class="masonry_item" style="position: absolute; left: 330px; top: 260px">
+                <div class="image">
+                  <img src="https://marketifythemes.net/html/waxon/img/thumbs/1-1.jpg" alt="" onclick="" id="person2" />
+                  <div class="main" data-img-url="img/about/3.jpg" style="background-image: url(img/about/3.jpg)"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LATEST NEWS -->
+  <div class="news" id="news">
+    <div class="container">
+      <div class="main_title">
+        <div class="title">
+          <h3>Latest News<span class="bg">News</span></h3>
+        </div>
+      </div>
+      <div class="news_inner">
+        <ul>
+          <li>
+            <div class="list_inner">
+              <div class="image">
+                <img src="https://marketifythemes.net/html/waxon/img/thumbs/4-3.jpg" alt="" />
+                <div class="main" data-img-url="img/news/1.jpg" style="background-image: url('img/news/1.jpg')"></div>
+                <a class="full_link" href="#"></a>
+              </div>
+              <div class="details">
+                <div class="extra">
+                  <p class="date">
+                    By <a href="#">Alex Watson</a> <span>10 May 2021</span>
+                  </p>
+                </div>
+                <h3 class="title">
+                  <a href="#">Developers watch out for these burnout symptoms</a>
+                </h3>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="list_inner">
+              <div class="image">
+                <img src="https://marketifythemes.net/html/waxon/img/thumbs/4-3.jpg" alt="" />
+                <div class="main" data-img-url="img/news/2.jpg" style="background-image: url('img/news/2.jpg')"></div>
+              </div>
+              <div class="details">
+                <div class="extra">
+                  <p class="date">
+                    By <a href="#">Bona Green</a> <span>05 April 2021</span>
+                  </p>
+                </div>
+                <h3 class="title">
+                  <a href="#">How to be appreciated for your hard work as a
+                    developer</a>
+                </h3>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="list_inner">
+              <div class="image">
+                <img src="https://marketifythemes.net/html/waxon/img/thumbs/4-3.jpg" alt="" />
+                <div class="main" data-img-url="img/news/3.jpg" style="background-image: url('img/news/3.jpg')"></div>
+                <a class="full_link" href="#"></a>
+              </div>
+              <div class="details">
+                <div class="extra">
+                  <p class="date">
+                    By <a href="#">Ave Smith</a> <span>22 March 2021</span>
+                  </p>
+                </div>
+                <h3 class="title">
+                  <a href="#">How designers and developers can collaborate better</a>
+                </h3>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- CONTACT -->
+  <div class="contact" id="contact">
+    <div class="bg_image"></div>
+    <div class="container">
+      <div class="contact_inner">
+        <div class="main_title">
+          <div class="title">
+            <h3>Get in Touch<span class="bg">Contact</span></h3>
+          </div>
+        </div>
+        <div class="description">
+          <p>
+            Please fill out the form on this section to contact with me. Or
+            call between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday
+          </p>
+        </div>
+        <div class="wrapper row">
+          <div class="left col-lg-6">
+            <div class="fields">
+              <form class="contact_form">
+                <div class="first">
+                  <ul>
+                    <li>
+                      <input id="name" type="text" placeholder=" Name" />
+                    </li>
+                    <li>
+                      <input id="email" type="text" placeholder=" Email" />
+                    </li>
+                  </ul>
+                </div>
+                <div class="last">
+                  <textarea id="message" placeholder=" Message"></textarea>
+                </div>
+                <div class="btnn">
+                  <a id="send_message" href="#">
+                    <span>Send Message</span>
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="right col-lg-6">
+            <div class="wow animate__fadeInUp">
+              <div class="mapouter">
+                <div class="gmap_canvas">
+                  <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0"
+                    marginwidth="0"
+                    src="https://maps.google.com/maps?width=802&amp;height=400&amp;hl=en&amp;q=israel azerbaijan training center&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                </div>
+                <style>
+                  .mapouter {
+                    position: relative;
+                    text-align: right;
+                    width: 100%;
+                    height: 400px;
+                  }
+
+                  .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    width: 100%;
+                    height: 400px;
+                  }
+
+                  .gmap_iframe {
+                    height: 400px !important;
+                  }
+                </style>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="container">
+      <div class="footer_inner">
+        <ul>
+          <li>
+            <span>WAXON</span>
+            <span>PORTFOLIO TEMPLATE</span>
+          </li>
+          <li>
+            <span>Brook 103,</span>
+            <span>90021 New York, USA</span>
+          </li>
+          <li>
+            <span><a href="#"><span class="__cf_email__" data-cfemail="">user123@gmail.com</span></a></span>
+            <span>+77 033 442 55 57</span>
+          </li>
+          <li>
+            <div class="social">
+              <ul>
+                <li>
+                  <a href="#">
+                    <span class="first"><i class="fa-brands fa-facebook-f"></i></span>
+                    <span class="second"><i class="fa-brands fa-facebook-f"></i></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="first"><i class="fa-brands fa-twitter"></i></span>
+                    <span class="second"><i class="fa-brands fa-twitter"></i></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <a href="#">
+                      <span class="first"><i class="fa-brands fa-instagram"></i></span>
+                      <span class="second"><i class="fa-brands fa-instagram"></i></span>
+                    </a>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="first"><i class="fa-brands fa-soundcloud"></i></span>
+                    <span class="second"><i class="fa-brands fa-soundcloud"></i></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="first"><i class="fa-brands fa-youtube"></i></span>
+                    <span class="second"><i class="fa-brands fa-youtube"></i></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="first"><i class="fa-brands fa-vk"></i></span>
+                    <span class="second"><i class="fa-brands fa-vk"></i></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="./mixitup-3/dist/mixitup.min.js"></script>
+  <script>
+    var containerEl = document.querySelector(".gallery");
+
+    var mixer = mixitup(containerEl);
+  </script>
 </body>
+<!-- JQUERY -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<!-- JS -->
+<script src="js/index.js"></script>
 
-
+<!-- ISOTOPE -->
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 
 </html>
