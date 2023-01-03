@@ -518,7 +518,7 @@ td {
 
 /* LEARN MORE MODAL */
 /* The Modal (background) */
-.waxon_tm_modalbox_about{
+.about_modal{
 	position: fixed;
 	top: 50px;
 	left: 0px;
@@ -535,14 +535,14 @@ td {
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.waxon_tm_modalbox_about.opened{
+.about_modal.opened{
 	opacity: 1;
 	visibility: visible;
 }
-.waxon_tm_modalbox_about .container{
+.about_modal .container{
 	height: 100vh;
 }
-.waxon_tm_modalbox_about .box_inner{
+.about_modal .modal_inner{
 	position: absolute;
 	top: 70px;
 	bottom: 70px;
@@ -562,29 +562,29 @@ td {
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.waxon_tm_modalbox_about.opened .box_inner{
+.about_modal.opened .modal_inner{
 	opacity: 1;
 	visibility: visible;
 	margin-top: 0px;
 }
-.waxon_tm_modalbox_about .close{
+.about_modal .close{
 	position: fixed;
 	left: 100%;
 	top: 0px;
 	margin-left: 40px;
 	z-index: 111111;
 }
-/* .waxon_tm_modalbox_about .close a{
+/* .about_modal .close a{
 	text-decoration: none;
 	color: #fff;
 } */
-.waxon_tm_modalbox_about .close .svg{
+.about_modal .close .svg{
   text-decoration: none;
 	color: #fff;
 	width: 50px;
 	height: 50px;
 }
-.waxon_tm_modalbox_about .description_wrap{
+.about_modal .information2{
 	position: relative;
 	width: 100%;
 	height: 100%;
@@ -593,23 +593,23 @@ td {
 	padding: 90px 70px 75px 70px;
 	overflow-y: scroll;
 }
-.waxon_tm_modalbox_about .my_box{
+.about_modal .my_box{
 	width: 100%;
 	height: auto;
 	clear: both;
 	display: flex;
 	margin-bottom: 92px;
 }
-.waxon_tm_modalbox_about .my_box .left{
+.about_modal .my_box .left{
 	width: 50%;
 	padding-right: 50px;
 }
-.waxon_tm_modalbox_about .about_title h3{
+.about_modal .about_title h3{
 	font-weight: 700;
 	color: #000;
 	font-size: 20px;
 }
-.waxon_progress{
+.progress_bars{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -634,24 +634,24 @@ td {
 .progress_inner span.number{
 	float: right;
 }
-.progress_inner .background{
+.progress_inner .background1{
 	background:rgba(0,0,0,.09);
 	width:100%;
 	min-width:100%;
 	position:relative;
 	height:3px;
 }
-.progress_inner .background .bar_in{
+.progress_inner .background1 .bar_in{
 	height:100%;
 	background:#000;
 	width:0px;
 	overflow:hidden;
 }
-.progress_inner .background .bar{
+.progress_inner .background1 .bar{
 	width:0px;
 	height:100%;
 }
-.progress_inner .background .bar.open{
+.progress_inner .background1 .bar.open{
 	-webkit-animation: wow 2s cubic-bezier(0.165, 0.840, 0.440, 1.000);  /* Safari 4+ */
 	-moz-animation:    wow 2s cubic-bezier(0.165, 0.840, 0.440, 1.000);  /* Fx 5+ */
 	animation:         wow 2s cubic-bezier(0.165, 0.840, 0.440, 1.000);  /* IE 10+ */
@@ -662,29 +662,29 @@ td {
 @-moz-keyframes wow {0%{ width:0%; } 100%{ width:100%; }}
 @keyframes wow {0%{ width:0%; } 100%{ width:100%; }}
 
-.waxon_tm_modalbox_about .my_box .right{
+.about_modal .my_box .right{
 	width: 50%;
 	padding-left: 50px;
 }
-.waxon_tm_modalbox_about .counter{
+.about_modal .facts{
 	width: 100%;
 	float: left;
 	clear: both;
 }
-.waxon_tm_modalbox_about .counter ul{
+.about_modal .facts ul{
 	margin: 0px 0px 42px -50px;
 	list-style-type: none;
 	padding-top: 45px;
 	display: flex;
 	flex-wrap: wrap;
 }
-.waxon_tm_modalbox_about .counter ul li{
+.about_modal .facts ul li{
 	margin: 0px 0px 50px 0px;
 	width: 33.3333%;
 	float: left;
 	padding-left: 50px;
 } 
-.waxon_tm_modalbox_about .list_inner{
+.about_modal .box_fact{
 	width: 100%;
 	height: 100%;
 	clear: both;
@@ -694,15 +694,15 @@ td {
 	text-align: center;
 	padding: 40px 20px;
 }
-.waxon_tm_modalbox_about .counter ul li h3{
+.about_modal .facts ul li h3{
 	font-weight: 600;
 	font-size: 20px;
 	margin-bottom: 3px;
 }
-.waxon_tm_modalbox_about .counter ul li span{
+.about_modal .facts ul li span{
 	font-style: italic;
 }
-.waxon_tm_modalbox_about .partners{
+.about_modal .partners{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -991,7 +991,7 @@ td {
   padding-left: 50px;
 }
 
-.portfolio .portfolio_inner ul li .list_inner {
+.portfolio .portfolio_inner ul li .box_fact {
   width: 100%;
   height: auto;
   clear: both;
@@ -1028,7 +1028,7 @@ td {
   z-index: 1;
 }
 
-.portfolio .portfolio_inner ul li .list_inner .image:hover .overlay {
+.portfolio .portfolio_inner ul li .box_fact .image:hover .overlay {
   opacity: 1;
   visibility: visible;
 }
@@ -1042,18 +1042,18 @@ td {
   z-index: 4;
 }
 
-.portfolio .portfolio_inner ul li .list_inner .image {
+.portfolio .portfolio_inner ul li .box_fact .image {
   position: relative;
   margin-bottom: 20px;
   overflow: hidden;
 }
 
-.portfolio .portfolio_inner ul li .list_inner .image img {
+.portfolio .portfolio_inner ul li .box_fact .image img {
   min-width: 100%;
   opacity: 0;
 }
 
-.portfolio .portfolio_inner ul li .list_inner .image .main {
+.portfolio .portfolio_inner ul li .box_fact .image .main {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -1070,7 +1070,7 @@ td {
   transition: all 0.3s ease;
 }
 
-.portfolio .portfolio_inner ul li .list_inner .image:hover .main {
+.portfolio .portfolio_inner ul li .box_fact .image:hover .main {
   transform: scale(1.1) translateZ(0);
 }
 
@@ -1103,240 +1103,15 @@ td {
 
 /* TESTIMONIALS */
 
-/* .testimonials {
-  width: 100%;
-  height: auto;
-  clear: both;
-  float: left;
-  margin-bottom: 100px;
-}
 
-.testimonials .testimonials_inner {
-  width: 100%;
-  height: auto;
-  clear: both;
-  display: flex;
-  align-items: center;
-  padding-top: 105px;
-}
-
-.testimonials .testimonials_inner .left {
-  width: 50%;
-  padding-right: 50px;
-}
-
-.testimonials .quotes {
-  width: 100%;
-  height: auto;
-  clear: both;
-  float: left;
-}
-
-.testimonials .quotes ul {
-  margin: 0px;
-  list-style-type: none;
-  position: relative;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.testimonials .quotes ul li {
-  position: absolute;
-  margin: 0px;
-  width: 100%;
-}
-
-.testimonials .quotes ul li .svg {
-  width: 50px;
-  height: 50px;
-  color: #000;
-  margin-bottom: 30px;
-  opacity: 0;
-}
-
-.testimonials .quotes ul li.active .svg {
-  opacity: 1;
-}
-
-.testimonials .quotes ul li .text {
-  opacity: 0;
-  visibility: hidden;
-  font-style: italic;
-
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.testimonials .quotes ul li.active .text {
-  opacity: 1;
-  visibility: visible;
-}
-
-.testimonials .details {
-  width: 100%;
-  height: auto;
-  clear: both;
-  display: flex;
-  align-items: center;
-  padding-top: 30px;
-}
-
-.testimonials .details .image {
-  width: 65px;
-  height: 65px;
-  border-radius: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.testimonials .details .main {
-  position: absolute;
-  top: -4px;
-  bottom: -4px;
-  left: -4px;
-  right: -4px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: 100%;
-  opacity: 0;
-
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
-
-  transform: scale(1.5) translateZ(0);
-}
-
-.testimonials .quotes ul li.active .details .main {
-  opacity: 1;
-  transition: all 1s 0.3s ease;
-  transform: scale(1) translateZ(0);
-}
-
-.testimonials .short {
-  padding-left: 25px;
-}
-
-.testimonials .short h3 {
-  overflow: hidden;
-  margin: 0px;
-  padding: 0px;
-  line-height: 1;
-  position: relative;
-}
-
-.testimonials .short .author {
-  font-family: "Poppins";
-  font-size: 18px;
-  color: #000;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-
-.testimonials .short .job {
-  font-family: "Mulish";
-  font-size: 15px;
-  color: #767676;
-  font-weight: 400;
-  display: block;
-  font-style: italic;
-}
-
-.testimonials .short .author span,
-.testimonials .short .job span {
-  position: relative;
-  display: block;
-  padding: 2px 0px;
-  transform: translateY(102%);
-
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
-}
-
-.testimonials .quotes ul li.active .short .author span {
-  transform: translateY(0px);
-  transition-delay: 0.3s;
-}
-
-.testimonials .quotes ul li.active .short .job span {
-  transform: translateY(0px);
-  transition-delay: 0.6s;
-}
-
-.testimonials .testimonials_inner .right {
-  width: 50%;
-  padding-left: 50px;
-}
-
-.testimonials .testimonials_inner .right .image_list {
-  width: 100%;
-  height: auto;
-  clear: both;
-  float: left;
-}
-
-.testimonials .testimonials_inner .right .image_list ul {
-  margin: 0px 0px 0px -50px;
-  list-style-type: none;
-}
-
-.testimonials .testimonials_inner .right .image_list ul li {
-  margin: 0px 0px 50px 0px;
-  float: left;
-  width: 50%;
-  padding-left: 50px;
-  opacity: 0.5;
-  cursor: pointer;
-
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.testimonials .testimonials_inner .right .image_list ul li.active {
-  opacity: 1;
-}
-
-.testimonials .testimonials_inner .right .image_list ul li .image {
-  position: relative;
-}
-
-.testimonials .testimonials_inner .right .image_list ul li .image img {
-  min-width: 100%;
-  opacity: 0;
-}
-
-.testimonials .testimonials_inner .right .image_list ul li .image .main {
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-} */
-
-.waxon_tm_testimonials{
+.testimonials{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
 	margin-bottom: 100px;
 }
-.waxon_tm_testimonials .testi_inner{
+.testimonials .testimonials_inner{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -1344,17 +1119,17 @@ td {
 	align-items: center;
 	padding-top: 105px;
 }
-.waxon_tm_testimonials .testi_inner .left{
+.testimonials .testimonials_inner .left{
 	width: 50%;
 	padding-right: 50px;
 }
-.waxon_tm_testimonials .quote_list{
+.testimonials .quote_list{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
 }
-.waxon_tm_testimonials .quote_list ul{
+.testimonials .quote_list ul{
 	margin: 0px;
 	list-style-type: none;
 	position: relative;
@@ -1362,22 +1137,22 @@ td {
 	display: flex;
 	align-items: center;
 }
-.waxon_tm_testimonials .quote_list ul li{
+.testimonials .quote_list ul li{
 	position: absolute;
 	margin: 0px;
 	width: 100%;
 }
-.waxon_tm_testimonials .quote_list ul li .svg{
+.testimonials .quote_list ul li .svg{
 	width: 50px;
 	height: 50px;
 	color: #000;
 	margin-bottom: 30px;
 	opacity: 0;
 }
-.waxon_tm_testimonials .quote_list ul li.active .svg{
+.testimonials .quote_list ul li.active .svg{
 	opacity: 1;
 }
-.waxon_tm_testimonials .quote_list ul li .text{
+.testimonials .quote_list ul li .text{
 	opacity: 0;
 	visibility: hidden;
 	font-style: italic;
@@ -1388,11 +1163,11 @@ td {
 	     -o-transition: all .5s ease;
 	        transition: all .5s ease;
 }
-.waxon_tm_testimonials .quote_list ul li.active .text{
+.testimonials .quote_list ul li.active .text{
 	opacity: 1;
 	visibility: visible;
 }
-.waxon_tm_testimonials .details{
+.testimonials .details{
 	width: 100%;
 	height: auto;
 	clear: both;
@@ -1400,14 +1175,14 @@ td {
 	align-items: center;
 	padding-top: 30px;
 }
-.waxon_tm_testimonials .details .image{
+.testimonials .details .image{
 	width: 65px;
 	height: 65px;
 	border-radius: 100%;
 	position: relative;
 	overflow: hidden;
 }
-.waxon_tm_testimonials .details .main{
+.testimonials .details .main{
 	position: absolute;
 	top: -4px;
 	bottom: -4px;
@@ -1427,29 +1202,29 @@ td {
 	
 	transform: scale(1.5) translateZ(0);
 }
-.waxon_tm_testimonials .quote_list ul li.active .details .main{
+.testimonials .quote_list ul li.active .details .main{
 	opacity: 1;
 	transition: all 1s .3s ease;
 	transform: scale(1) translateZ(0);
 }
-.waxon_tm_testimonials .short{
+.testimonials .short{
 	padding-left: 25px;
 }
-.waxon_tm_testimonials .short h3{
+.testimonials .short h3{
 	overflow: hidden;
 	margin: 0px;
 	padding: 0px;
 	line-height: 1;
 	position: relative;
 }
-.waxon_tm_testimonials .short .author{
+.testimonials .short .author{
 	font-family: "Poppins";
 	font-size: 18px;
 	color: #000;
 	font-weight: 600;
 	margin-bottom: 8px;
 }
-.waxon_tm_testimonials .short .job{
+.testimonials .short .job{
 	font-family: "Mulish";
 	font-size: 15px;
 	color: #767676;
@@ -1457,8 +1232,8 @@ td {
 	display: block;
 	font-style: italic;
 }
-.waxon_tm_testimonials .short .author span,
-.waxon_tm_testimonials .short .job span{
+.testimonials .short .author span,
+.testimonials .short .job span{
 	position: relative;
 	display: block;
 	padding: 2px 0px;
@@ -1470,33 +1245,33 @@ td {
 	     -o-transition: all 1s ease;
 	        transition: all 1s ease;
 }
-.waxon_tm_testimonials .quote_list ul li.active .short .author span{
+.testimonials .quote_list ul li.active .short .author span{
 	transform: translateY(0px);
 	transition-delay: 0.3s;
 }
-.waxon_tm_testimonials .quote_list ul li.active .short .job span{
+.testimonials .quote_list ul li.active .short .job span{
 	transform: translateY(0px);
 	transition-delay: 0.6s;
 }
-.waxon_tm_testimonials .testi_inner .right{
+.testimonials .testimonials_inner .right{
 	width: 50%;
 	padding-left: 50px;
 }
-.waxon_tm_testimonials .testi_inner .right .image_list{
+.testimonials .testimonials_inner .right .image_list{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
 }
-.waxon_tm_testimonials .testi_inner .right .image_list ul{
+.testimonials .testimonials_inner .right .image_list ul{
 	margin: 0px 0px 0px -50px;
 	list-style-type: none;
 }
-.waxon_tm_testimonials .testi_inner .right .image_list ul li{
+.testimonials .testimonials_inner .right .image_list ul li{
 	margin: 0px 0px 50px 0px;
 	float: left;
 	width: 50%;
-	padding-left: 50px;
+	/* padding-left: 50px; */
 	opacity: .5;
 	cursor: pointer;
 	
@@ -1506,17 +1281,17 @@ td {
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.waxon_tm_testimonials .testi_inner .right .image_list ul li.active{
+.testimonials .testimonials_inner .right .image_list ul li.active{
 	opacity: 1;
 }
-.waxon_tm_testimonials .testi_inner .right .image_list ul li .image{
+.testimonials .testimonials_inner .right .image_list ul li .image{
 	position: relative;
 }
-.waxon_tm_testimonials .testi_inner .right .image_list ul li .image img{
+.testimonials .testimonials_inner .right .image_list ul li .image img{
 	min-width: 100%;
 	opacity: 0;
 }
-.waxon_tm_testimonials .testi_inner .right .image_list ul li .image .main{
+.testimonials .testimonials_inner .right .image_list ul li .image .main{
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -1557,7 +1332,7 @@ td {
   padding-left: 50px;
 }
 
-.news .news_inner ul li .list_inner {
+.news .news_inner ul li .box_fact {
   width: 100%;
   height: auto;
   clear: both;
@@ -1593,7 +1368,7 @@ td {
   transition: all 0.3s ease;
 }
 
-.news ul li .list_inner .image:hover .main {
+.news ul li .box_fact .image:hover .main {
   transform: scale(1.1) translateZ(0);
 }
 
