@@ -241,7 +241,7 @@ td {
   clear: both;
   float: left;
   position: relative;
-  margin-bottom: 240px;
+  /* margin-bottom: 240px; */
 }
 
 .home .background {
@@ -413,6 +413,15 @@ td {
 }
 
 /* About */
+
+.about{
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    margin-bottom: 193px;
+    padding-top: 230px;
+}
 
 .about .about_inner {
   width: 100%;
@@ -1370,7 +1379,7 @@ td {
   margin: 0px 0px 50px 0px;
   float: left;
   width: 50%;
-  /* padding-left: 50px; */
+  padding-left: 50px;
   opacity: .5;
   cursor: pointer;
 
