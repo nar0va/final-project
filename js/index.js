@@ -55,3 +55,43 @@ function testimonials_hover(){
 }
 testimonials_hover();
 
+
+const list = document.querySelector('.list'),
+items = document.querySelectorAll('.block-items')
+
+function filter() {
+    list.addEventListener('click', event => {
+        const targetId = event.target.dataset.id
+        console.log(targetId)
+
+        switch(targetId) {
+            case 'all':
+                getItems('block-items')
+                break
+            case 'vimeo':
+                getItems(targetId)
+                break
+            case 'youtube':
+                getItems(targetId)
+                break
+            case 'soundcloud':
+                getItems(targetId)
+                break
+            case 'image':
+                getItems(targetId)
+                break
+        }
+
+    })
+}
+filter()
+
+function getItems(className) {
+    items.forEach(item => {
+        if (item.classList.contains(className)){
+            item.style.display = 'block'
+        }else{
+            item.style.display = 'none'
+        }
+    })
+}
